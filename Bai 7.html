@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+<h2>FIZZBUZZ</h2>
+<script>
+    for (let i = 1; i <= 100; i++) {
+        let output = '';
+        if (i % 3 == 0 && i % 5 == 0){
+            output += 'Fizzbuzz';
+            document.write(output);
+            document.write('<br>')
+        }
+        else if (i % 3 == 0){
+            output +='Fizz';
+            document.write(output);
+            document.write('<br>')
+        }
+        else if (i % 5 == 0) {
+            output += 'Buzz';
+            document.write('Buzz');
+            document.write('<br>')
+        }
+
+        else {
+            document.write(i);
+            document.write('<br>')
+        }
+    }
+</script>
+</body>
+</html>
